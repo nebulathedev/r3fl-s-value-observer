@@ -200,82 +200,84 @@ G2L["d"]["LayoutOrder"] = 2147483647;
 G2L["d"]["Name"] = [[Name]];
 
 
--- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.Value
-G2L["e"] = Instance.new("TextLabel", G2L["c"]);
-G2L["e"]["TextWrapped"] = true;
-G2L["e"]["Active"] = true;
+-- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.ValueBox
+G2L["e"] = Instance.new("TextBox", G2L["c"]);
+G2L["e"]["CursorPosition"] = -1;
+G2L["e"]["Name"] = [[ValueBox]];
+G2L["e"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["e"]["ZIndex"] = 2147483647;
 G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextWrapped"] = true;
 G2L["e"]["TextSize"] = 14;
-G2L["e"]["TextScaled"] = true;
-G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e"]["BackgroundTransparency"] = 1;
-G2L["e"]["Size"] = UDim2.new(1, 0, 0.66827, 25);
+G2L["e"]["TextScaled"] = true;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(96, 96, 96);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["MultiLine"] = true;
+G2L["e"]["ClearTextOnFocus"] = false;
+G2L["e"]["PlaceholderText"] = [[Insert New Value]];
+G2L["e"]["Size"] = UDim2.new(0, 494, 0, 26);
+G2L["e"]["Position"] = UDim2.new(0, 0, 0.94028, 0);
 G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Text"] = [[Value: 0]];
-G2L["e"]["LayoutOrder"] = 2147483647;
-G2L["e"]["Name"] = [[Value]];
-G2L["e"]["Position"] = UDim2.new(0, 0, 0, 69);
-
-
--- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.ValueBox
-G2L["f"] = Instance.new("TextBox", G2L["c"]);
-G2L["f"]["CursorPosition"] = -1;
-G2L["f"]["Name"] = [[ValueBox]];
-G2L["f"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["ZIndex"] = 2147483647;
-G2L["f"]["BorderSizePixel"] = 0;
-G2L["f"]["TextWrapped"] = true;
-G2L["f"]["TextSize"] = 14;
-G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["TextScaled"] = true;
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(96, 96, 96);
-G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f"]["MultiLine"] = true;
-G2L["f"]["ClearTextOnFocus"] = false;
-G2L["f"]["PlaceholderText"] = [[Insert New Value]];
-G2L["f"]["Size"] = UDim2.new(0, 494, 0, 26);
-G2L["f"]["Position"] = UDim2.new(0, 0, 0.94028, 0);
-G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["Text"] = [[]];
+G2L["e"]["Text"] = [[]];
 
 
 -- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.Change
-G2L["10"] = Instance.new("TextButton", G2L["c"]);
-G2L["10"]["TextWrapped"] = true;
-G2L["10"]["BorderSizePixel"] = 0;
-G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10"]["TextSize"] = 14;
-G2L["10"]["TextScaled"] = true;
-G2L["10"]["BackgroundColor3"] = Color3.fromRGB(116, 116, 116);
-G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["10"]["ZIndex"] = 2147483647;
-G2L["10"]["Size"] = UDim2.new(0, 494, 0, 26);
-G2L["10"]["Name"] = [[Change]];
-G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10"]["Text"] = [[Change]];
-G2L["10"]["Position"] = UDim2.new(0, 0, 0.88055, 0);
+G2L["f"] = Instance.new("TextButton", G2L["c"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["TextSize"] = 14;
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(116, 116, 116);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["ZIndex"] = 2147483647;
+G2L["f"]["Size"] = UDim2.new(0, 494, 0, 26);
+G2L["f"]["Name"] = [[Change]];
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[Change]];
+G2L["f"]["Position"] = UDim2.new(0, 0, 0.88055, 0);
 
 
 -- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.FocusedValue
-G2L["11"] = Instance.new("ObjectValue", G2L["c"]);
-G2L["11"]["Name"] = [[FocusedValue]];
+G2L["10"] = Instance.new("ObjectValue", G2L["c"]);
+G2L["10"]["Name"] = [[FocusedValue]];
 
 
 -- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.Icon
-G2L["12"] = Instance.new("ImageLabel", G2L["c"]);
-G2L["12"]["Active"] = true;
+G2L["11"] = Instance.new("ImageLabel", G2L["c"]);
+G2L["11"]["Active"] = true;
+G2L["11"]["ZIndex"] = 2147483647;
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(116, 116, 116);
+G2L["11"]["Image"] = [[rbxassetid://110035247118489]];
+G2L["11"]["Size"] = UDim2.new(0, 35, 0, 35);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["LayoutOrder"] = 2147483647;
+G2L["11"]["Name"] = [[Icon]];
+G2L["11"]["Position"] = UDim2.new(0.46264, 0, 0.07684, 0);
+
+
+-- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.Value
+G2L["12"] = Instance.new("TextBox", G2L["c"]);
+G2L["12"]["Name"] = [[Value]];
 G2L["12"]["ZIndex"] = 2147483647;
 G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(116, 116, 116);
-G2L["12"]["Image"] = [[rbxassetid://110035247118489]];
-G2L["12"]["Size"] = UDim2.new(0, 35, 0, 35);
+G2L["12"]["TextEditable"] = false;
+G2L["12"]["TextWrapped"] = true;
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["TextScaled"] = true;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["Selectable"] = false;
+G2L["12"]["ClearTextOnFocus"] = false;
+G2L["12"]["Size"] = UDim2.new(1, 0, 0.66827, 25);
+G2L["12"]["Position"] = UDim2.new(0, 0, 0, 69);
 G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[Value: 0]];
 G2L["12"]["LayoutOrder"] = 2147483647;
-G2L["12"]["Name"] = [[Icon]];
-G2L["12"]["Position"] = UDim2.new(0.46264, 0, 0.07684, 0);
+G2L["12"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.r3fl's Value Observer.MainBar.MainFrame.CV
