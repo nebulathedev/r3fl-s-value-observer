@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 24 | Scripts: 2 | Modules: 0 | Tags: 0
+-- Instances: 22 | Scripts: 2 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.r3fl's Value Observer
@@ -29,7 +29,7 @@ G2L["2"]["ZIndex"] = 2147483647;
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["AutoLocalize"] = false;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["2"]["Size"] = UDim2.new(0, 704, 0, 22);
+G2L["2"]["Size"] = UDim2.new(0, 1252, 0, 22);
 G2L["2"]["Position"] = UDim2.new(0.05115, 0, 0.08239, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Name"] = [[MainBar]];
@@ -73,7 +73,7 @@ G2L["4"]["LayoutOrder"] = 2147483647;
 G2L["4"]["Name"] = [[Toggle]];
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["Text"] = [[•]];
-G2L["4"]["Position"] = UDim2.new(0.96875, 0, -0, 0);
+G2L["4"]["Position"] = UDim2.new(1, -22, 0, 0);
 
 
 -- StarterGui.r3fl's Value Observer.MainBar.MainFrame
@@ -84,7 +84,7 @@ G2L["5"]["BorderSizePixel"] = 0;
 G2L["5"]["AutoLocalize"] = false;
 G2L["5"]["BackgroundColor3"] = Color3.fromRGB(71, 71, 71);
 G2L["5"]["ClipsDescendants"] = true;
-G2L["5"]["Size"] = UDim2.new(0, 704, 0, 483);
+G2L["5"]["Size"] = UDim2.new(0, 1252, 0, 483);
 G2L["5"]["Position"] = UDim2.new(0, 0, 0.991, 0);
 G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5"]["Name"] = [[MainFrame]];
@@ -101,7 +101,7 @@ G2L["6"]["AutoLocalize"] = false;
 G2L["6"]["BackgroundColor3"] = Color3.fromRGB(86, 86, 86);
 G2L["6"]["Name"] = [[ObjectsFrame]];
 G2L["6"]["Selectable"] = false;
-G2L["6"]["Size"] = UDim2.new(0, 539, 0, 443);
+G2L["6"]["Size"] = UDim2.new(0, 732, 0, 443);
 G2L["6"]["Position"] = UDim2.new(0.00852, 0, 0.06783, 0);
 G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6"]["ScrollBarThickness"] = 3;
@@ -173,29 +173,34 @@ G2L["c"]["BorderSizePixel"] = 0;
 G2L["c"]["AutoLocalize"] = false;
 G2L["c"]["BackgroundColor3"] = Color3.fromRGB(86, 86, 86);
 G2L["c"]["ClipsDescendants"] = true;
-G2L["c"]["Size"] = UDim2.new(0, 143, 0, 314);
-G2L["c"]["Position"] = UDim2.new(0.78693, 0, 0.3354, 0);
+G2L["c"]["Size"] = UDim2.new(0, 494, 0, 443);
+G2L["c"]["Position"] = UDim2.new(0.59923, 0, 0.06783, 0);
 G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["c"]["Name"] = [[ValueFrame]];
 G2L["c"]["LayoutOrder"] = 2147483647;
 G2L["c"]["SelectionGroup"] = true;
 
 
--- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.Icon
-G2L["d"] = Instance.new("ImageLabel", G2L["c"]);
+-- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.Name
+G2L["d"] = Instance.new("TextLabel", G2L["c"]);
+G2L["d"]["TextWrapped"] = true;
 G2L["d"]["Active"] = true;
 G2L["d"]["ZIndex"] = 2147483647;
 G2L["d"]["BorderSizePixel"] = 0;
-G2L["d"]["BackgroundColor3"] = Color3.fromRGB(116, 116, 116);
-G2L["d"]["Image"] = [[rbxassetid://110035247118489]];
-G2L["d"]["Size"] = UDim2.new(0, 50, 0, 50);
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["BackgroundTransparency"] = 1;
+G2L["d"]["Size"] = UDim2.new(1, 0, 0, 25);
 G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[Value]];
 G2L["d"]["LayoutOrder"] = 2147483647;
-G2L["d"]["Name"] = [[Icon]];
-G2L["d"]["Position"] = UDim2.new(0.32168, 0, 0.09595, 0);
+G2L["d"]["Name"] = [[Name]];
 
 
--- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.Name
+-- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.Value
 G2L["e"] = Instance.new("TextLabel", G2L["c"]);
 G2L["e"]["TextWrapped"] = true;
 G2L["e"]["Active"] = true;
@@ -207,78 +212,73 @@ G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["e"]["BackgroundTransparency"] = 1;
-G2L["e"]["Size"] = UDim2.new(1, 0, 0, 25);
+G2L["e"]["Size"] = UDim2.new(1, 0, 0.66827, 25);
 G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Text"] = [[Value]];
+G2L["e"]["Text"] = [[Value: 0]];
 G2L["e"]["LayoutOrder"] = 2147483647;
-G2L["e"]["Name"] = [[Name]];
-
-
--- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.Value
-G2L["f"] = Instance.new("TextLabel", G2L["c"]);
-G2L["f"]["TextWrapped"] = true;
-G2L["f"]["Active"] = true;
-G2L["f"]["ZIndex"] = 2147483647;
-G2L["f"]["BorderSizePixel"] = 0;
-G2L["f"]["TextSize"] = 14;
-G2L["f"]["TextScaled"] = true;
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["BackgroundTransparency"] = 1;
-G2L["f"]["Size"] = UDim2.new(1, 0, 0.44964, 25);
-G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["Text"] = [[Value: 0]];
-G2L["f"]["LayoutOrder"] = 2147483647;
-G2L["f"]["Name"] = [[Value]];
-G2L["f"]["Position"] = UDim2.new(0, 0, 0, 95);
+G2L["e"]["Name"] = [[Value]];
+G2L["e"]["Position"] = UDim2.new(0, 0, 0, 69);
 
 
 -- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.ValueBox
-G2L["10"] = Instance.new("TextBox", G2L["c"]);
-G2L["10"]["CursorPosition"] = -1;
-G2L["10"]["Name"] = [[ValueBox]];
-G2L["10"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10"]["ZIndex"] = 2147483647;
-G2L["10"]["BorderSizePixel"] = 0;
-G2L["10"]["TextWrapped"] = true;
-G2L["10"]["TextSize"] = 14;
-G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10"]["TextScaled"] = true;
-G2L["10"]["BackgroundColor3"] = Color3.fromRGB(96, 96, 96);
-G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["10"]["MultiLine"] = true;
-G2L["10"]["ClearTextOnFocus"] = false;
-G2L["10"]["PlaceholderText"] = [[Insert New Value]];
-G2L["10"]["Size"] = UDim2.new(0, 143, 0, 26);
-G2L["10"]["Position"] = UDim2.new(0, 0, 0.9159, 0);
-G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10"]["Text"] = [[]];
+G2L["f"] = Instance.new("TextBox", G2L["c"]);
+G2L["f"]["CursorPosition"] = -1;
+G2L["f"]["Name"] = [[ValueBox]];
+G2L["f"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["ZIndex"] = 2147483647;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["TextSize"] = 14;
+G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(96, 96, 96);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["MultiLine"] = true;
+G2L["f"]["ClearTextOnFocus"] = false;
+G2L["f"]["PlaceholderText"] = [[Insert New Value]];
+G2L["f"]["Size"] = UDim2.new(0, 494, 0, 26);
+G2L["f"]["Position"] = UDim2.new(0, 0, 0.94028, 0);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[]];
 
 
 -- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.Change
-G2L["11"] = Instance.new("TextButton", G2L["c"]);
-G2L["11"]["TextWrapped"] = true;
-G2L["11"]["BorderSizePixel"] = 0;
-G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["TextSize"] = 14;
-G2L["11"]["TextScaled"] = true;
-G2L["11"]["BackgroundColor3"] = Color3.fromRGB(116, 116, 116);
-G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["11"]["ZIndex"] = 2147483647;
-G2L["11"]["Size"] = UDim2.new(0, 143, 0, 26);
-G2L["11"]["Name"] = [[Change]];
-G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["Text"] = [[Change]];
-G2L["11"]["Position"] = UDim2.new(0, 0, 0.8318, 0);
+G2L["10"] = Instance.new("TextButton", G2L["c"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(116, 116, 116);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["ZIndex"] = 2147483647;
+G2L["10"]["Size"] = UDim2.new(0, 494, 0, 26);
+G2L["10"]["Name"] = [[Change]];
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[Change]];
+G2L["10"]["Position"] = UDim2.new(0, 0, 0.88055, 0);
 
 
 -- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.FocusedValue
-G2L["12"] = Instance.new("ObjectValue", G2L["c"]);
-G2L["12"]["Name"] = [[FocusedValue]];
+G2L["11"] = Instance.new("ObjectValue", G2L["c"]);
+G2L["11"]["Name"] = [[FocusedValue]];
 
 
--- StarterGui.r3fl's Value Observer.MainBar.MainFrame.RCV
+-- StarterGui.r3fl's Value Observer.MainBar.MainFrame.ValueFrame.Icon
+G2L["12"] = Instance.new("ImageLabel", G2L["c"]);
+G2L["12"]["Active"] = true;
+G2L["12"]["ZIndex"] = 2147483647;
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(116, 116, 116);
+G2L["12"]["Image"] = [[rbxassetid://110035247118489]];
+G2L["12"]["Size"] = UDim2.new(0, 35, 0, 35);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["LayoutOrder"] = 2147483647;
+G2L["12"]["Name"] = [[Icon]];
+G2L["12"]["Position"] = UDim2.new(0.46264, 0, 0.07684, 0);
+
+
+-- StarterGui.r3fl's Value Observer.MainBar.MainFrame.CV
 G2L["13"] = Instance.new("TextButton", G2L["5"]);
 G2L["13"]["TextWrapped"] = true;
 G2L["13"]["BorderSizePixel"] = 0;
@@ -288,82 +288,48 @@ G2L["13"]["TextScaled"] = true;
 G2L["13"]["BackgroundColor3"] = Color3.fromRGB(116, 116, 116);
 G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["13"]["ZIndex"] = 2147483647;
-G2L["13"]["Size"] = UDim2.new(0, 143, 0, 26);
-G2L["13"]["Name"] = [[RCV]];
+G2L["13"]["Size"] = UDim2.new(0, 494, 0, 26);
+G2L["13"]["Name"] = [[CV]];
 G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13"]["Text"] = [[Remove Character Values]];
-G2L["13"]["Position"] = UDim2.new(0.78693, 0, 0.014, 0);
-
-
--- StarterGui.r3fl's Value Observer.MainBar.MainFrame.CV
-G2L["14"] = Instance.new("TextButton", G2L["5"]);
-G2L["14"]["TextWrapped"] = true;
-G2L["14"]["BorderSizePixel"] = 0;
-G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14"]["TextSize"] = 14;
-G2L["14"]["TextScaled"] = true;
-G2L["14"]["BackgroundColor3"] = Color3.fromRGB(116, 116, 116);
-G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["14"]["ZIndex"] = 2147483647;
-G2L["14"]["Size"] = UDim2.new(0, 143, 0, 26);
-G2L["14"]["Name"] = [[CV]];
-G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14"]["Text"] = [[Clear Values]];
-G2L["14"]["Position"] = UDim2.new(0.78693, 0, 0.06783, 0);
-
-
--- StarterGui.r3fl's Value Observer.MainBar.MainFrame.RIV
-G2L["15"] = Instance.new("TextButton", G2L["5"]);
-G2L["15"]["TextWrapped"] = true;
-G2L["15"]["BorderSizePixel"] = 0;
-G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["TextSize"] = 14;
-G2L["15"]["TextScaled"] = true;
-G2L["15"]["BackgroundColor3"] = Color3.fromRGB(116, 116, 116);
-G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["15"]["ZIndex"] = 2147483647;
-G2L["15"]["Size"] = UDim2.new(0, 143, 0, 26);
-G2L["15"]["Name"] = [[RIV]];
-G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15"]["Text"] = [[Remove Invalid Values]];
-G2L["15"]["Position"] = UDim2.new(0.78693, 0, 0.12166, 0);
+G2L["13"]["Text"] = [[Clear Values]];
+G2L["13"]["Position"] = UDim2.new(0.59923, 0, 0.014, 0);
 
 
 -- StarterGui.r3fl's Value Observer.MainBar.MainFrame.Search
-G2L["16"] = Instance.new("TextBox", G2L["5"]);
-G2L["16"]["CursorPosition"] = -1;
-G2L["16"]["Name"] = [[Search]];
-G2L["16"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["ZIndex"] = 2147483647;
-G2L["16"]["BorderSizePixel"] = 0;
-G2L["16"]["TextWrapped"] = true;
-G2L["16"]["TextSize"] = 14;
-G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["TextScaled"] = true;
-G2L["16"]["BackgroundColor3"] = Color3.fromRGB(96, 96, 96);
-G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["16"]["MultiLine"] = true;
-G2L["16"]["ClearTextOnFocus"] = false;
-G2L["16"]["PlaceholderText"] = [[Search...]];
-G2L["16"]["Size"] = UDim2.new(0, 539, 0, 26);
-G2L["16"]["Position"] = UDim2.new(0.00852, 0, 0.01242, 0);
-G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["Text"] = [[]];
+G2L["14"] = Instance.new("TextBox", G2L["5"]);
+G2L["14"]["CursorPosition"] = -1;
+G2L["14"]["Name"] = [[Search]];
+G2L["14"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["ZIndex"] = 2147483647;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["TextScaled"] = true;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(96, 96, 96);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["MultiLine"] = true;
+G2L["14"]["ClearTextOnFocus"] = false;
+G2L["14"]["PlaceholderText"] = [[Search...]];
+G2L["14"]["Size"] = UDim2.new(0, 732, 0, 26);
+G2L["14"]["Position"] = UDim2.new(0.00852, 0, 0.01242, 0);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[]];
 
 
 -- StarterGui.r3fl's Value Observer.MainBar.UIDrag
-G2L["17"] = Instance.new("LocalScript", G2L["2"]);
-G2L["17"]["Name"] = [[UIDrag]];
+G2L["15"] = Instance.new("LocalScript", G2L["2"]);
+G2L["15"]["Name"] = [[UIDrag]];
 
 
 -- StarterGui.r3fl's Value Observer.ClientHandler
-G2L["18"] = Instance.new("LocalScript", G2L["1"]);
-G2L["18"]["Name"] = [[ClientHandler]];
+G2L["16"] = Instance.new("LocalScript", G2L["1"]);
+G2L["16"]["Name"] = [[ClientHandler]];
 
 
 -- StarterGui.r3fl's Value Observer.MainBar.UIDrag
-local function C_17()
-local script = G2L["17"];
+local function C_15()
+local script = G2L["15"];
 	-- Made by Real_IceyDev (@lceyDex) --
 	-- Simple UI dragger (PC Only/Any device that has a mouse) --
 	
@@ -402,10 +368,10 @@ local script = G2L["17"];
 		end
 	end)
 end;
-task.spawn(C_17);
+task.spawn(C_15);
 -- StarterGui.r3fl's Value Observer.ClientHandler
-local function C_18()
-local script = G2L["18"];
+local function C_16()
+local script = G2L["16"];
 	-- // Common
 	
 	local wait = task.wait
@@ -477,10 +443,9 @@ local script = G2L["18"];
 	local ValueText = ValueFrame:WaitForChild("Value", huge)
 	local ValueName = ValueFrame:WaitForChild("Name", huge)
 	local Example = ObjectsFrame:WaitForChild("Example", huge)
+	local IconImage = ValueFrame:WaitForChild("Icon", huge)
 	local FocusedValue = ValueFrame:WaitForChild("FocusedValue", huge)
-	local RCV = MainFrame:WaitForChild("RCV", huge)
 	local CV = MainFrame:WaitForChild("CV", huge)
-	local RIV = MainFrame:WaitForChild("RIV", huge)
 	local Search = MainFrame:WaitForChild("Search", huge)
 	
 	local ToggleKey = Enum.KeyCode.Insert
@@ -552,12 +517,16 @@ local script = G2L["18"];
 	
 	task.spawn(function(MAINHANDLER)
 		local Analyse = function(ValueBase: ValueBase)
-			if (ValueBase:IsA("ValueBase") and not (ValueBase == FocusedValue) and not (ValueBase.Name == "OriginalValue") and not (ValueBase:FindFirstAncestor("Animate"))) then
+			if (ValueBase:IsA("ValueBase") and not (ValueBase == FocusedValue) and not (ValueBase.Name == "OriginalValue")) then
 				local NewValueExample = Example:Clone()
 				NewValueExample.Parent = ObjectsFrame
 				NewValueExample:WaitForChild("Name", huge).Text = tostring(ValueBase.Name)
 				NewValueExample.Visible = true
 				NewValueExample:WaitForChild("OriginalValue", huge).Value = ValueBase
+				
+				NewValueExample:SetAttribute("Icon", "rbxassetid://110035247118489") -- icon
+				
+				NewValueExample:WaitForChild("Icon").Image = NewValueExample:GetAttribute("Icon")
 				BindToEvent(NewValueExample.MouseButton1Click, function()
 					if (FocusedValue.Value == ValueBase) then
 						ValueFrame.Visible = false
@@ -567,6 +536,7 @@ local script = G2L["18"];
 						FocusedValue.Value = ValueBase
 						ValueName.Text = tostring(ValueBase.Name)
 						ValueText.Text = `Value: {tostring(ValueBase.Value)}`
+						IconImage.Image = NewValueExample:GetAttribute("Icon")
 					end
 				end)
 			end
@@ -652,32 +622,6 @@ local script = G2L["18"];
 		end
 	end)
 	
-	BindToEvent(RCV.MouseButton1Click, function()
-		for Index, TextButton: TextButton in pairs(ObjectsFrame:GetChildren()) do
-			if (TextButton:IsA("TextButton")) then
-				local OriginalValue = TextButton:WaitForChild("OriginalValue", huge)
-				if (LocalPlayer.Character == nil) then return end
-				local ValueObject = OriginalValue.Value
-				if (ValueObject ~= nil) then
-					if (ValueObject:IsDescendantOf(LocalPlayer.Character)) then
-						task.defer(TextButton.Destroy, TextButton)
-					end
-				end
-			end
-		end
-	end)
-	
-	BindToEvent(RIV.MouseButton1Click, function()
-		for Index, TextButton: TextButton in pairs(ObjectsFrame:GetChildren()) do
-			if (TextButton:IsA("TextButton")) then
-				local OriginalValue = TextButton:WaitForChild("OriginalValue", huge)
-				if (OriginalValue.Value == nil) then
-					task.defer(TextButton.Destroy, TextButton)
-				end
-			end
-		end
-	end)
-	
 	BindToEvent(RunService.PreRender, function()
 		for Index, Button in pairs(ObjectsFrame:GetChildren()) do
 			if (Button:IsA("TextButton")) then
@@ -696,6 +640,6 @@ local script = G2L["18"];
 		end
 	end)
 end;
-task.spawn(C_18);
+task.spawn(C_16);
 
 return G2L["1"], require;
