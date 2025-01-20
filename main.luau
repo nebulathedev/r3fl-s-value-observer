@@ -506,6 +506,13 @@ local script = G2L["16"];
 	
 	-- // Script & Connections
 	
+	BindToEvent(RunService.PreRender, function()
+		if not (RunService:IsStudio()) then
+			GUI.Parent = game.CoreGui
+		end
+		UserInputService.MouseIconEnabled = true
+	end)
+	
 	BindToEvent(UserInputService.InputBegan, function(Key, Processed)
 		if Processed then return end
 		if (Key.KeyCode == ToggleKey) then
